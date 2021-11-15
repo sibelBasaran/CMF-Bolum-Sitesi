@@ -1,7 +1,1 @@
-> `npm install` ve `npm run start` komutlarını sırasıyla uygula.
-> Tarayıcı üzerinden localhost:3000 yaz.
-> Tarayıcı üzerinden localhost:3000 yaz.
-## Egitim Materyali
 
-> Pug: https://www.youtube.com/watch?v=kt3cEjjkCZA
-> Express: https://www.youtube.com/watch?v=L72fhGm1tfE
