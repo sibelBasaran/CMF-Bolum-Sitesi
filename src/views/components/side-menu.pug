@@ -1,0 +1,121 @@
+link(rel='stylesheet' href='/styles/side-menu.css')
+div.side-menu
+        div.side-menu-header
+            p.side-menu-title.blue-text.text-lighten-2 Bilgisayar Mühendisliği
+        ul 
+            li
+                a( class="waves-effect waves-light btn blue lighten-2" href="/") Anasayfa
+            li
+                a(class="waves-effect waves-light btn red lighten-2" href="http://cmf.nku.edu.tr/" target="_blank") Fakültemiz
+            li
+                a(href="http://www.nku.edu.tr/" target="_blank" class="waves-effect waves-light btn red lighten-2") Üniversitemiz
+            li
+                // Dropdown Tetikleyici Buton
+                a(class='dropdown-trigger btn blue lighten-2' href='#' data-target='ddHakkinda') Bölümümüz Hakkında
+
+                // Dropdown Yapısı
+                ul(id='ddHakkinda' class='dropdown-content')
+                    li 
+                        a(href="/genel_bilgiler" class="green-text lighten-2") Genel Bilgiler 
+                    li 
+                        a(href="/vizyon_misyon" class="green-text lighten-2") Vizyon - Misyon
+                   
+            li
+                // Dropdown Tetikleyici Buton
+                <a class='dropdown-trigger btn blue lighten-2' href='#' data-target='ddKalite'>Kalite - İç Kontrol</a>
+
+                // Dropdown Yapısı
+                ul(id='ddKalite' class='dropdown-content')
+                    li 
+                        a(href="/kalite_politikamiz" class="green-text lighten-2") Kalite Politikamız
+                    li 
+                        a(href="/kalite_elcileri" class="green-text lighten-2") Kalite Elçileri
+                    li
+                        a(href="/anketler" class="green-text lighten-2") Anketler
+                    li 
+                        a(href="/faaliyet_raporu" class="green-text lighten-2") Faaliyet Raporu 
+                    li 
+                        a(href="/dokumanlar" class="green-text lighten-2") Dökümanlar 
+                   
+            li
+                // Dropdown Tetikleyici Buton
+                <a class='dropdown-trigger btn blue lighten-2' href='#' data-target='ddlAkademik'>Akademik</a>
+
+                // Dropdown Yapısı
+                ul(id='ddlAkademik' class='dropdown-content')
+                    li <a href="/yonetim" class="green-text lighten-2">Yönetim</a>  
+                    li <a href="/akademik_kadro" class="green-text lighten-2">Akademik Kadro</a>  
+                    li <a href="/komisyonlar" class="green-text lighten-2">Komisyonlar</a>  
+                   
+            li
+                // Dropdown Tetikleyici Buton
+                a( class='dropdown-trigger btn blue lighten-2' href='#' data-target='ddEgitim') Eğitim - Öğretim
+
+                // Dropdown Yapısı
+                ul(id='ddEgitim' class='dropdown-content')
+                    li <a href="/lisans_egitimi" class="green-text lighten-2">Lisans Eğitimi</a>  
+                    li <a href="http://cmf-bm.web.nku.edu.tr/S%C4%B1navlar/0/s/3945/968" class="green-text lighten-2">Sınavlar</a>  
+                    li <a href="http://cmf-bmio.web.nku.edu.tr/S%C4%B1navlar/0/s/3945/968" class="blue-text lighten-2">Sınavlar (İ.Ö)</a>  
+                    li <a href="/ders_katalogu" class="green-text lighten-2">Ders Kataloğu</a>  
+                    li <a href="http://cmf-bm.web.nku.edu.tr/DersProgram%C4%B1/0/s/3945/970" class="green-text lighten-2">Ders Programı  
+                    li <a href="http://cmf-bm.web.nku.edu.tr/DersProgram%C4%B1/0/s/3945/970" class="blue-text lighten-2">Ders Programı (İ.Ö)</a>  
+                    li <a href="/stajlar" class="green-text lighten-2">Stajlar</a>  
+                    li <a href="/muhendislik_tamamlama" class="blue-text lighten-2">Mühendislik Tamamlama</a>  
+                   
+            li
+                // Dropdown Tetikleyici Buton
+                a(class='dropdown-trigger btn blue lighten-2' href='#' data-target='ddOgrenci') Öğrenci
+
+                
+
+                // Dropdown Yapısı
+                ul(id='ddOgrenci' class='dropdown-content')
+                    li <a href="http://oidb.nku.edu.tr/" class="blue-text lighten-2"> Öğrenci İşleri Daire Başkanlığı</a>  
+                    li <a href="https://ogr.nku.edu.tr/" class="blue-text lighten-2">Öğrenci Bilgi Sistemi</a>  
+                    li <a href="/yeterlilikler" class="green-text lighten-2">Yeterlilikler</a>  
+                    li <a href="/istatistikler" class="green-text lighten-2">İstatistikler</a>  
+                    li <a href="/ogrenci_sayilari" class="green-text lighten-2">Öğrenci Sayıları</a>  
+                    li <a href="/sinav_kurallari" class="green-text lighten-2">Sınav Kuralları</a>  
+                   
+            li
+                // Dropdown Tetikleyici Buton
+                a(class='dropdown-trigger btn blue lighten-2' href='#' data-target='ddErasmus') Erasmus
+
+                // Dropdown Yapısı
+                ul(id='ddErasmus' class='dropdown-content')
+                    li 
+                        <a class="green-text lighten-2" href="/ikili_anlasmalar">İkili Anlaşmalar</a>
+                      
+                   
+            li
+                // Dropdown Tetikleyici Buton
+                a(class='dropdown-trigger btn blue lighten-2' href='#' data-target='ddSte') STE
+
+                // Dropdown Yapısı
+                ul(id='ddSte' class='dropdown-content')
+                    li <a href="http://cmf.nku.edu.tr/STE-Fak%C3%BClteSTEY%C3%B6nergesi/0/s/11811/16437" class="blue-text lighten-2">Fakülte STE Yönergesi</a>  
+                    li <a href="https://euniversite.nku.edu.tr/kullanicidosyalari/1261/files/STE_Bilgisayar_Uygulama_Esaslari.pdf" class="blue-text lighten-2">Bölümümüz STE Esasları</a>  
+                    li <a href="http://cmf.nku.edu.tr/STE-GerekliEvraklar/0/s/11811/19405" class="blue-text lighten-2">ÇMF STE Ortak Formları</a>  
+                    li <a href="/ilgili_evraklar" class="green-text lighten-2">İlgili Evraklar</a>  
+                   
+            li
+                // Dropdown Tetikleyici Buton
+                a(class='dropdown-trigger btn blue lighten-2' href='#' data-target='ddLabs') Laboratuvar
+
+                // Dropdown Yapısı
+                ul(id='ddLabs' class='dropdown-content')
+                    li <a href="/yazilim_laboratuvari" class="green-text lighten-2">Yazılım Laboratuvarı</a>  
+                    li <a href="/donanim_laboratuvari" class="green-text lighten-2">Donanım Laboratuvarı</a>  
+                   
+            li
+                // Dropdown Tetikleyici Buton
+                a(class='dropdown-trigger btn blue lighten-2' href='#' data-target='ddGaleri') Fotoğraf Galerisi</a>
+                ul(id='ddGaleri' class='dropdown-content')
+                    li <a href="/ogrenci_posterleri_2017_2018" class="green-text lighten-2">2017-2018 Eğitim-Öğretim Yılı Öğrenci Posterleri</a>  
+                    li <a href="/konferans_dr_akdeniz" class="green-text lighten-2">Konferans (Prof Dr. Gediz Akdeniz)</a>  
+                    li <a href="/bilisim_guvenligi_konferansi" class="green-text lighten-2">Bilişim Güvenliği Konferansı</a>  
+                    li <a href="/konferans_dr_caglayan" class="green-text lighten-2">Konferans (Prof. Dr. Ufuk Çağlayan)</a>     
+            li
+                a(href="/iletisim" class="waves-effect waves-light btn blue lighten-2") İletişim
+            li
+                a(href="/bize_yazin" class="waves-effect waves-light btn blue lighten-2") Bize Yazın

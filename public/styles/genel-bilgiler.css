@@ -1,0 +1,24 @@
+.margin-bottom-2 {
+    margin-bottom: 2rem;
+}
+.margin-bottom-1 {
+    margin-bottom: 1.5rem;
+}
+
+.field-title {
+    margin: 0;
+    padding: 2rem;
+    padding-left: 0;
+}
+
+h4 {
+    margin-bottom: 1.5rem;
+}
+
+.margin-1 {
+    margin: 1rem;
+}
+
+.padding-1 {
+    padding: 2rem;
+}

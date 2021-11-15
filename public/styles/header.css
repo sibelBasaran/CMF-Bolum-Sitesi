@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+}
+
+.main-logo {
+    cursor: pointer;
+    margin: 0 2rem;
+}
+
+.main-title {
+    cursor: pointer;
+}

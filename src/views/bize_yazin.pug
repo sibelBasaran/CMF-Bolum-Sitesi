@@ -1,0 +1,14 @@
+include components/header.pug
+// Page Content
+main.ctn
+    include components/side-menu.pug
+    div.content
+        div.row(style="margin-top: 10rem;")
+            h2(style="text-align: center; margin-bottom: 6rem;") Bize Yazın
+            form.col.s6.push-s3(action="/send_mail" method="POST")
+                input.validate(placeholder="Mail Adresi", id="mail_address", name="mail_address", type="text")
+                input.validate(placeholder="Başlık", id="subject", name="subject", type="text")
+                textarea.materialize-textarea(placeholder="Mesaj", name="message", id="message", type="text")
+                input.btn(style="width: 100%", type="submit" value="Mail Gönder")
+// End of Page Content
+include components/footer.pug

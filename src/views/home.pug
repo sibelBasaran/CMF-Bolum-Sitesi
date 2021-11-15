@@ -1,0 +1,38 @@
+include components/header.pug
+// Page Content
+main.ctn
+    include components/side-menu.pug
+    div.content(style="max-width: 83.2%;")
+        div.row
+            div.col.s6
+                div.card
+                    h4.card-title(style="text-align: center;") Duyurular
+                    hr
+                    div.card-content
+                        if duyurular.length === 0
+                            p Herhangi bir duyuru gerçekleşmedi.
+                        else
+                            each duyuru in duyurular
+                                div.card(style="padding: 1rem")
+                                    a(style="font-size: 2.4rem")=duyuru.title
+                                    p=duyuru.createdAt
+                                    hr
+                                    p(style="word-wrap: break-word;")=duyuru.desscription
+            div.col.s6
+                div.card
+                    h4.card-title(style="text-align: center;") Haberler
+                    hr
+                    div.card-content
+                        if haberler.length === 0
+                            p Herhangi bir haber yayınlamadı.
+                        else
+                            each haber in haberler
+                                div.card(style="padding: 1rem;")
+                                    a(style="font-size: 2.4rem")=haber.title
+                                    p=haber.createdAt
+                                    hr
+                                    p(style="word-wrap: break-word;")=haber.description
+
+
+// End of Page Content
+include components/footer.pug

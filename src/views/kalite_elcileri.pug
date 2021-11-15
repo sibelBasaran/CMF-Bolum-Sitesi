@@ -1,0 +1,28 @@
+include components/header.pug
+// Page Content
+main.ctn
+    include components/side-menu.pug
+    div.content
+        div.row
+            div.col.s6.push-s3
+                h4(style="text-align: center; padding-top: 2rem; padding-bottom: 2rem;").blue-text.text-lighten-2 Kalite Elçileri
+        div.row
+            div.col.s12.m4.l4(style="")
+                div(style="display: flex; flex-direction: column; justify-content: stretch; align-items: center; padding: 1rem; box-shadow: 1px 0 6px #444;")
+                    img(
+                        width="385"
+                        src="http://euniversite.nku.edu.tr/personel_resimleri/2016042609185151531.jpg" 
+                        alt="konf 1" 
+                        class="img-thumbnail")
+                    h4(style="margin-top: 1rem;") Dr. Öğr. Üyesi ERKAN ÖZHAN
+            div.col.s12.m4.l4(style="")
+                div(style="display: flex; flex-direction: column; justify-content: stretch; align-items: center; padding: 1rem; box-shadow: 1px 0 6px #444;")
+                    img(
+                        width="385"
+                        src="http://euniversite.nku.edu.tr/personel_resimleri/14968981950.jpg" 
+                        alt="konf 2"
+                        class="img-thumbnail")
+                    h4(style="margin-top: 1rem;") Arş. Gör. Dr. PINAR CİHAN
+
+// End of Page Content
+include components/footer.pug

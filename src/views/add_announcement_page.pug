@@ -1,0 +1,17 @@
+include components/header.pug
+// Page Content
+main.ctn
+    include components/side-menu.pug
+    div.content
+        div.row(style="height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 50%")
+            div.card(style="padding: 2rem; display: flex; flex-direction: column; align-items: center; width: 50%; min-height: 70%")
+                h3(style="margin-bottom: 5rem;") Duyuru Ekle
+                form.col.s12(action="/announcements/add" method="POST")
+                    input.validate(style="margin-bottom: 2rem;", placeholder="Title", id="title", name="title", type="text")
+                    textarea.materialize-textarea(style="height: 40rem; align-self: stretch; margin-bottom: 2rem;", placeholder="Description", name="desscription", id="desscription", type="text")
+                    input.btn(style="width: 100%", type="submit" value="Ekle")
+            
+
+
+// End of Page Content
+include components/footer.pug
